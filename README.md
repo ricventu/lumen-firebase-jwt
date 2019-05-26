@@ -2,4 +2,4 @@
 [![Build Status](https://travis-ci.org/ricventu/lumen-firebase-jwt.svg?branch=master)](https://travis-ci.org/ricventu/lumen-firebase-jwt)
 
 # lumen-firebase-jwt
-Lumen with Firebase/php-jwt authentication
+[Lumen](https://github.com/laravel/lumen) with [Firebase/php-jwt](https://github.com/firebase/php-jwt) authentication
