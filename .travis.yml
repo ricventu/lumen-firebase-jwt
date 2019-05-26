@@ -5,10 +5,17 @@ language: php
 
 php:
   - '7.1'
-  
+
+services:
+  - mysql
+
+before_install:
+  - mysql -e 'CREATE DATABASE testdb;'
+
 before_script:
   - composer self-update
   - composer install --no-interaction
-  
+  - cp .env.travis .env
+
 script:
   - vendor/bin/phpunit 
