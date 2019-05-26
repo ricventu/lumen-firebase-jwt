@@ -7,10 +7,10 @@ php:
   - '7.1'
 
 services:
-  - mysql
+  - postgresql
 
 before_install:
-  - mysql -e 'CREATE DATABASE testdb;'
+  - psql -c 'create database travis_ci_test;' -U postgres
 
 before_script:
   - composer self-update
